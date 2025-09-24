@@ -1,7 +1,8 @@
 import avatar from '../assets/images/sample-avatar.jpg';
+import {AUTHOR} from '../consts.ts';
 
 export const author = {
-  name: 'Site Author',
+  name: AUTHOR,
   avatar,
   url: '#',
 };

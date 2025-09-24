@@ -4,7 +4,7 @@
 import '../styles/global.css';
 import type { ImageMetadata } from 'astro';
 import FallbackImage from '../assets/images/blog-placeholder-1.jpg';
-import { SITE_TITLE } from '../consts';
+import { SITE_TITLE, TWITTER, LINKEDIN, HANDLE } from '../consts';
 
 interface Props {
 	title: string;
@@ -68,7 +68,7 @@ const imageUrl = new URL(image.src, siteOrigin).toString();
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@guihubie" />
+<meta name="twitter:site" content={HANDLE} />
 <meta property="twitter:url" content={absoluteUrl} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
